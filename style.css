@@ -1,31 +1,31 @@
 @font-face {
   font-family: "VictorMono";
   font-style: normal;
-  src: url("/fonts/EOT/VictorMono-Regular.eot");
-  src: url("/fonts/EOT/VictorMono-Regular.eot?#iefix")
+  src: url("fonts/EOT/VictorMono-Regular.eot");
+  src: url("fonts/EOT/VictorMono-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("/fonts/WOFF/VictorMono-Regular.woff") format("woff"),
-    url("/fonts/TTF/VictorMono-Regular.ttf") format("truetype");
+    url("fonts/WOFF/VictorMono-Regular.woff") format("woff"),
+    url("fonts/TTF/VictorMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "VictorMono-Italic";
   font-style: italic;
-  src: url("/fonts/EOT/VictorMono-Italic.eot");
-  src: url("/fonts/EOT/VictorMono-Italic.eot?#iefix")
+  src: url("fonts/EOT/VictorMono-Italic.eot");
+  src: url("fonts/EOT/VictorMono-Italic.eot?#iefix")
       format("embedded-opentype"),
-    url("/fonts/WOFF/VictorMono-Italic.woff") format("woff"),
-    url("/fonts/TTF/VictorMono-Italic.ttf") format("truetype");
+    url("fonts/WOFF/VictorMono-Italic.woff") format("woff"),
+    url("fonts/TTF/VictorMono-Italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "VictorMono-Oblique";
   font-style: oblique;
-  src: url("/fonts/EOT/VictorMono-Oblique.eot");
-  src: url("/fonts/EOT/VictorMono-Oblique.eot?#iefix")
+  src: url("fonts/EOT/VictorMono-Oblique.eot");
+  src: url("fonts/EOT/VictorMono-Oblique.eot?#iefix")
       format("embedded-opentype"),
-    url("/fonts/WOFF/VictorMono-Oblique.woff") format("woff"),
-    url("/fonts/TTF/VictorMono-Oblique.ttf") format("truetype");
+    url("fonts/WOFF/VictorMono-Oblique.woff") format("woff"),
+    url("fonts/TTF/VictorMono-Oblique.ttf") format("truetype");
 }
 
 * {
