@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "VictorMono";
+  font-style: normal;
+  src: url("/fonts/EOT/VictorMono-Regular.eot");
+  src: url("/fonts/EOT/VictorMono-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/WOFF/VictorMono-Regular.woff") format("woff"),
+    url("/fonts/TTF/VictorMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "VictorMono-Italic";
+  font-style: italic;
+  src: url("/fonts/EOT/VictorMono-Italic.eot");
+  src: url("/fonts/EOT/VictorMono-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/WOFF/VictorMono-Italic.woff") format("woff"),
+    url("/fonts/TTF/VictorMono-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "VictorMono-Oblique";
+  font-style: oblique;
+  src: url("/fonts/EOT/VictorMono-Oblique.eot");
+  src: url("/fonts/EOT/VictorMono-Oblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/WOFF/VictorMono-Oblique.woff") format("woff"),
+    url("/fonts/TTF/VictorMono-Oblique.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "VictorMono", monospace;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+a.logo {
+  font-family: "VictorMono-Italic", italic;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: auto;
+}
+a {
+  color: inherit;
+}
+.options {
+  font-size: 14px;
+}
+.options p {
+  font-family: "VictorMono-Italic", italic;
+  padding-left: 0;
+  list-style: none;
+}
+.options img {
+  width: 100%;
+}
+.options a {
+  color: #00f;
+  margin-bottom: 4px;
+}
+.home-options {
+  height: calc(100vh - 210px);
+  display: flex;
+  flex-direction: row !important;
+  padding: 0;
+}
+.main-option {
+  width: 50vw;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-option:first-child {
+  background: #000;
+  color: #fff;
+}
+.main-option:first-child a {
+  color: #fff;
+}
+.main-option a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  max-width: 300px;
+}
+.episode-content {
+  max-width: 600px;
+  padding: 20px;
+}
+[data-time] {
+  padding-top: 30px;
+}
+footer,
+header {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 40px;
+  width: 100%;
+}
+
+.episode header,
+.tutorial header {
+  background: #fafafa;
+}
+
+footer .wrapper,
+header .wrapper {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+}
+footer a,
+header a {
+  color: #222;
+  text-decoration: none;
+}
+.episode footer,
+.tutorial footer {
+  background: #fafafa;
+}
+.links a {
+  font-family: "VictorMono-Italic", italic;
+  border-bottom: 2px solid;
+}
+footer .linux {
+  border-bottom: 0;
+  height: 28px;
+}
+article {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+article:nth-child(even) {
+  background: #fafafa;
+  flex-direction: row-reverse;
+}
+article:nth-child(odd) + footer {
+  background: #fafafa;
+}
+.article-number {
+  vertical-align: top;
+  position: relative;
+  text-align: right;
+  font-weight: 700;
+  font-size: 260px;
+  width: 320px;
+  line-height: 180px;
+  height: 196px;
+  z-index: 1;
+}
+.article-image {
+  margin-right: -120px;
+  margin-left: -120px;
+  width: 400px;
+  height: 400px;
+}
+.article-content {
+  background: rgb(0, 0, 0);
+  border-radius: 8%;
+  vertical-align: top;
+  position: relative;
+  text-align: left;
+  font-size: 10px;
+  width: 250px;
+  padding: 20px;
+  color: #fff;
+}
+.article-content h1 {
+  font-size: 20px;
+  margin-top: 0;
+}
+.article-content p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.article-links {
+  display: inline-block;
+  margin-top: 20px;
+}
+.article-links a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 8%;
+  padding: 10px 15px;
+  font-weight: 700;
+}
+.sidebar {
+  flex-direction: column;
+  padding-right: 30px;
+  position: sticky;
+  height: 100vh;
+  display: flex;
+  width: 350px;
+  top: 0;
+}
+.tutorial-post {
+  justify-content: center;
+  display: flex;
+}
+.tutorial-sidebar {
+  justify-content: center;
+  align-items: flex-end;
+}
+.tutorial-content {
+  padding: 20px;
+  padding-bottom: 50vh;
+  width: 560px;
+  color: #222;
+}
+.tutorial-content h1 {
+  font-size: 28px;
+}
+.tutorial-content img {
+  background: #f9f9f9;
+  display: block;
+  margin-bottom: 20px;
+  max-width: 320px;
+  width: 100%;
+}
+.tutorial-content p {
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 15px;
+}
+.tutorial-content li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+form {
+  background: #f9f9f9;
+  padding: 10px 20px 30px;
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+  border-left: 2px solid;
+  width: 100%;
+}
+form input {
+  background: #fff;
+  border: 1px solid #999;
+  color: #00f;
+  font-size: 15px;
+  font-family: inherit;
+  padding: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+form textarea {
+  background: #fff;
+  border: 1px solid #999;
+  color: #00f;
+  font-size: 15px;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+}
+form button {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 15px;
+  font-family: inherit;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.episode-content {
+  min-height: calc(100vh - 210px);
+  padding-bottom: 0;
+}
+audio {
+  width: 100%;
+  margin-top: 35px;
+  min-width: 250px;
+}
+.audio-sidebar {
+  flex-direction: column;
+  padding-right: 30px;
+  position: sticky;
+  display: flex;
+  width: 350px;
+  padding: 40px 20px 20px 20px;
+  top: 0;
+}
+.summary {
+  font-size: 14px;
+}
+.interactive-option {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  font-style: italic;
+  padding: 0 8px;
+}
+.intro {
+  margin-top: 60px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+@media only screen and (max-width: 900px) {
+  article {
+    flex-direction: column !important;
+  }
+  .article-image {
+    width: 90%;
+    height: auto;
+  }
+  .article-number {
+    display: none;
+  }
+  .article-content {
+    margin-top: -150px;
+    width: 100%;
+  }
+  .links {
+    text-align: right;
+  }
+  .tutorial-sidebar {
+    display: none;
+  }
+  .tutorial-content {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .home-options {
+    height: auto;
+    flex-direction: row !important;
+    display: block;
+  }
+  .main-option {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .options ul {
+    display: flex;
+  }
+  .audio-post {
+    flex-direction: column;
+  }
+  .audio-sidebar {
+    width: 100%;
+    position: relative;
+  }
+  .audio-sidebar,
+  .episode-content {
+    padding-top: 0;
+  }
+  .article-links {
+    width: 100%;
+  }
+  .article-links a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+.prev-next {
+  margin: 80px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
