@@ -222,6 +222,7 @@ article:nth-child(odd) + footer {
   color: #222;
 }
 .tutorial-content h1 {
+  font-family: "VictorMono-Italic", italic;
   font-size: 28px;
 }
 .tutorial-content img {
