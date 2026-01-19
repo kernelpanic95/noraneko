@@ -1,2 +1,2 @@
 # noraneko
-this where I put my thoughts.
+this is where I put my thoughts.
